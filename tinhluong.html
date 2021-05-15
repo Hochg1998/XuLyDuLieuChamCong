@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+
+                <label>Nhân viên:
+                    <select id="employeeName" onchange="logDulieu()">
+
+                    </select>
+                </label>
+                <label>Tháng:
+                    <select id="monthAutoGenerate" onchange="logDulieu()">
+
+                    </select>
+                </label>
+
+
+                <br></br>
+
+                <table id="bangtinhluong" class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th id="name">Tên</th>
+                            <th id="time">Thời điểm chấm công</th>
+                            <th></th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <p id="totalWorkingDaysPerMonth">Tổng sô ngày làm việc:</p>
+                <p id="totalWorkingHourPerMonth">Tổng giờ làm việc:</p>
+                <p id="totalLateDaysPerMonth">Số ngày đi muộn:</p>
+                <table id="bangtinhluong" class="table">
+                    <thead class="thead-dark">
+                        <tr id="tableHead1"></tr>
+                    </thead>
+                    <tbody>
+                        <tr id="tableBody1"></tr>
+                    </tbody>
+                </table>
+                <p style="color:red">Đi làm ít hơn 6 tiếng hoặc quên chấm vân tay</p>
+                <p style="color:blue">Đi làm muộn hoặc về sớm</p>
+                <p style="color:green">Quên chấm vân tay nghỉ trưa auto trừ 1h30</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src='tinhluong.js' defer></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+tinh luong so ngày công
+chấm công hằng ngày
+tính lương 1 tháng/20 ngày
+dư liệu 
+thời gian vào ra
+sáng 8h30 - 11h30
+chiều 1h30 - 4h30
+20 ngày = 4320k
+
+{
+  "employees": [
+    {
+	"name": "Trần Văn Học",
+      "id": 2,
+      "day": [
+{
+	"date": "1/1/2020"
+  	"time-in":8h30
+	"time-out":16h30
+}
+
+],
+  
+    }
+  ]
+}
